@@ -1,0 +1,39 @@
+{
+    "name": "contao/deployer-edition",
+    "type": "project",
+    "description": "A Contao managed edition ready to be deployed",
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Leo Feyer",
+            "homepage": "https://github.com/leofeyer"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "contao/calendar-bundle": "^4.4",
+        "contao/comments-bundle": "^4.4",
+        "contao/faq-bundle": "^4.4",
+        "contao/listing-bundle": "^4.4",
+        "contao/manager-bundle": "4.4.*",
+        "contao/news-bundle": "^4.4",
+        "contao/newsletter-bundle": "^4.4"
+    },
+    "conflict": {
+        "contao/core-bundle": "<4.4.8"
+    },
+    "require-dev": {
+        "deployer/deployer": "^5.0"
+    },
+    "config": {
+        "component-dir": "assets"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Contao\\ManagerBundle\\Composer\\ScriptHandler::initializeApplication"
+        ],
+        "post-update-cmd": [
+            "Contao\\ManagerBundle\\Composer\\ScriptHandler::initializeApplication"
+        ]
+    }
+}
