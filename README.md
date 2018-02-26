@@ -71,7 +71,7 @@ have Git installed on the target server and the target server needs permission
 to read your repository.
 
 Other than in the managed edition, the `files` directory is not ignored in the
-.gitignore file, because it is meant to be under version control.
+`.gitignore` file, because it is meant to be under version control.
 
 If you want to put your custom templates under version control (recommended),
 store them in `app/Resources/contao/templates` instead of in the `templates`
