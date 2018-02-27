@@ -60,7 +60,7 @@ before the first deployment, so create them on your target server:
 Deploy
 ------
 
-Now you can deploy by running `vendor/bin/deploy` on the command line.
+Now you can deploy by running `vendor/bin/dep deploy` on the command line.
 
 
 Notes
